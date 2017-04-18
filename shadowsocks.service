@@ -1,0 +1,16 @@
+[Unit]
+Description=Shadowsocks Server
+After=network.target
+
+[Service]
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /run/shadowsocks
+ExecStartPre=/bin/chown nobody:nobody /run/shadowsocks
+ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
+Restart=on-abort
+User=nobody
+Group=nobody
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
