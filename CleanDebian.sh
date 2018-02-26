@@ -49,3 +49,7 @@ apt-get autoremove -y
 apt-get clean
 apt-get autoclean
 
+rm -f /kiwivm_task_file*
+rm -rf /root/.kiwivm-task
+
+cat /dev/null > /root/.bash_history
