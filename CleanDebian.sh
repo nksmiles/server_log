@@ -44,3 +44,8 @@ rm -rf /var/log/*.gz
 rm -rf /var/log/apt/*.gz
 rm -rf /var/log/apt/*.xz
 rm -rf /var/log/lighttpd/*.gz
+
+apt-get autoremove -y
+apt-get clean
+apt-get autoclean
+
