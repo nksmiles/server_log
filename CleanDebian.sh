@@ -42,4 +42,5 @@ cat /dev/null > /var/log/apt/term.log
 
 rm -rf /var/log/*.gz
 rm -rf /var/log/apt/*.gz
+rm -rf /var/log/apt/*.xz
 rm -rf /var/log/lighttpd/*.gz
